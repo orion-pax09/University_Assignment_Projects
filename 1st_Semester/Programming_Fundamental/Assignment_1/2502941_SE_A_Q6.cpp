@@ -1,0 +1,56 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    int amount_in_rupees;
+    int subtraction1;
+    int calculation1;
+    int calculation2;
+    int multiplier;
+    int division1;
+    int remainder1;
+    int remainder3;
+    int division3;
+    int reminder2;
+    int division2;
+    int remainder4;
+    int division4;
+    int remainder5;
+    int division5;
+    cout << setw(30)<< "Currency Note" << setw(2)<< ":" << setw(9)<< "Number"<<endl;
+    cout <<  setw(30)<<"500"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"100"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"50"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"20"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"10"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"5"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout <<  setw(30)<<"1"<<setw(2)<<":"<<setw(8)<<"0"<<endl;
+    cout << "Enter the amount in rupees:";
+    cin >> amount_in_rupees;
+    cout << setw(30)<< "Currency Note" << setw(2)<< ":" << setw(8)<< "Number"<<endl;
+    division1 = amount_in_rupees/ 500;
+    cout << setw(30) << "500"<<setw(2)<< ":";
+    multiplier = division1 *  500;
+    subtraction1 = amount_in_rupees - multiplier;
+    calculation1 = subtraction1 / 100;
+    cout << setw(8) << division1<<endl;
+    cout << setw(30) << "100"<<setw(2)<<":";
+    cout << setw(8) << calculation1<<endl;
+    cout << setw(30)<< "50" << setw(2)<<":";
+    remainder1 = subtraction1 % 100;
+    calculation2 = remainder1 / 50;
+    cout << setw(8) << calculation2<<endl;
+    reminder2= remainder1 % 50;
+    division2 = reminder2 / 20;
+    cout << setw(30) << "20" << setw(2)<<":"<<setw(8)<<division2<<endl;
+    remainder3=reminder2 % 20;
+    division3 = remainder3 / 10;
+    cout << setw(30)<<"10"<<setw(2)<<":"<<setw(8)<<division3<<endl;
+    remainder4 = remainder3 % 10;
+    division4 = remainder4/ 5;
+    cout << setw(30)<<"5"<<setw(2)<<":"<<setw(8)<<division4<<endl;
+    remainder5 = remainder4 % 7;
+    division5 = division5 / 1;
+    cout <<  setw(30)<<"1"<<setw(2)<<":"<<setw(8)<<division5;
+    return 0;
+}
