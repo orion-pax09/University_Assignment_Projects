@@ -1,0 +1,28 @@
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Node modules
+node_modules/
+
+# Build files
+build/
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Git
+.git/
+
+# Large archives
+*.zip
