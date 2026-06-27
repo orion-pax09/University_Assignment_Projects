@@ -11,4 +11,4 @@ The repository is organized by **semester and subject** to keep the work structu
 * Practice version control using Git and GitHub
 * Maintain a portfolio of my programming projects
 
-Each folder represents a **semester**, and inside it are the **subjects and assignments** completed during that time.
+Each folder represents a **semester**, and inside it are the **subjects , projects and assignments** completed during that time.
